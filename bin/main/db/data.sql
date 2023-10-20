@@ -1,79 +1,23 @@
 INSERT INTO user_tb (`id`,`email`,`password`,`username`) VALUES ('1', 'ssar@nate.com', '1234', 'ssar');
 
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('1', '기본에 슬라이딩 지퍼백 크리스마스/플라워에디션 에디션 외 주방용품 특가전', '', '/images/1.jpg', '1000');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('2', '[황금약단밤 골드]2022년산 햇밤 칼집밤700g외/군밤용/생율', '', '/images/2.jpg', '2000');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('3', '삼성전자 JBL JR310 외 어린이용/성인용 헤드셋 3종!', '', '/images/3.jpg', '30000');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('4', '바른 누룽지맛 발효효소 2박스 역가수치보장 / 외 7종', '', '/images/4.jpg', '4000');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('5', '[더주] 컷팅말랑장족, 숏다리 100g/300g 외 주전부리 모음 /중독성 최고/마른안주', '', '/images/5.jpg', '5000');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('6', '굳지않는 앙금절편 1,050g 2팩 외 우리쌀떡 모음전', '', '/images/6.jpg', '15900');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('7', 'eoe 이너딜리티 30포, 오렌지맛 고 식이섬유 보충제', '', '/images/7.jpg', '26800');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('8', '제나벨 PDRN 크림 2개. 피부보습/진정 케어', '', '/images/8.jpg', '25900');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('9', '플레이스테이션 VR2 호라이즌 번들. 생생한 몰입감', '', '/images/9.jpg', '797000');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('10', '통영 홍 가리비 2kg, 2세트 구매시 1kg 추가증정', '', '/images/10.jpg', '8900');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('11', '아삭한 궁채 장아찌 1kg 외 인기 반찬 모음전', '', '/images/11.jpg', '6900');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('12', '깨끗한나라 순수소프트 30롤 2팩. 무형광, 도톰 3겹', '', '/images/12.jpg', '28900');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('13', '생활공작소 초미세모 칫솔 12입 2개+가글 증정', '', '/images/13.jpg', '9900');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('14', '경북 영천 샤인머스켓 가정용 1kg 2수 내외', '', '/images/14.jpg', '9900');
-INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('15', '[LIVE][5%쿠폰] 홈카페 Y3.3 캡슐머신 베이직 세트', '', '/images/15.jpg', '148000');
+INSERT INTO book_tb (`id`,`pic_url`,`title`,`writer`, `content`) VALUES ('1', '/images/book.png', '트렌드코리아 2024', '김난도','오롯이 인간만의 역량을 최대한 끌어올리는 것. 이를 위해 우리는 무엇을 알아야 하고, 무엇을 준비해야 할까? 2배속 사회에서 균형점을 찾기 위한 여백은 무엇인가? 올해의 〈트렌드 코리아〉는 유독 천천히 읽기를 권한다.');
+INSERT INTO book_tb (`id`,`pic_url`,`title`,`writer`, `content`) VALUES ('2', '/images/book.png', '퓨처셀프', '벤저민 하디','‘미래의 나’를 적용하는 과학 분야 세계 최고의 전문가,
+자기계발 분야 파워블로거이자 베스트셀러 작가의 신작
+세계적인 동기부여 전문가, 토니 로빈스 강력 추천!
 
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('1', '1', '01. 슬라이딩 지퍼백 크리스마스에디션 4종', '10000');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('2', '1', '02. 슬라이딩 지퍼백 플라워에디션 5종', '10900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('3', '1', '고무장갑 베이지 S(소형) 6팩', '9900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('4', '1', '뽑아쓰는 키친타올 130매 12팩', '16900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('5', '1', '2겹 식빵수세미 6매', '8900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('6', '2', '22년산 햇단밤 700g(한정판매)', '9900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('7', '2', '22년산 햇단밤 1kg(한정판매)', '14500');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('8', '2', '밤깎기+다회용 구이판 세트', '5500');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('9', '3', 'JR310 (유선 전용) - 블루', '29900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('10', '3', 'JR310BT (무선 전용) - 레드', '49900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('11', '3', 'JR310BT (무선 전용) - 그린', '49900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('12', '3', 'JR310BT (무선 전용) - 블루', '49900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('13', '3', 'T510BT (무선 전용) - 블랙', '52900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('15', '4', '선택01_바른곡물효소 누룽지맛 2박스', '17900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('16', '4', '선택02_바른곡물효소누룽지맛 6박스', '50000');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('17', '4', '선택03_바른곡물효소3박스+유산균효소3박스', '50000');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('18', '4', '선택04_바른곡물효소3박스+19종유산균3박스', '50000');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('19', '5', '01. 말랑컷팅장족 100g', '4900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('20', '5', '02. 말랑컷팅장족 300g', '12800');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('21', '5', '03. 눌린장족 100g', '4900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('22', '6', '굳지않는 쑥 앙금 절편 1050g', '15900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('23', '6', '굳지않는 흑미 앙금 절편 1050g', '15900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('24', '6', '굳지않는 흰 가래떡 1050g', '15900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('14', '3', 'T510BT (무선 전용) - 화이트', '52900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('25', '7', '이너딜리티 1박스', '26800');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('26', '7', '이너딜리티 2박스+사은품 2종', '49800');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('27', '8', '제나벨 PDRN 자생크림 1+1', '25900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('28', '9', '플레이스테이션 VR2 호라이즌 번들', '839000');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('29', '9', '플레이스테이션 VR2', '797000');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('30', '10', '홍가리비2kg(50미이내)', '8900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('31', '11', '궁채 절임 1kg', '6900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('32', '11', '양념 깻잎 1kg', '8900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('33', '11', '된장 깻잎 1kg', '8900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('34', '11', '간장 깻잎 1kg', '7900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('35', '11', '고추 무침 1kg', '8900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('36', '11', '파래 무침 1kg', '9900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('37', '12', '01_순수소프트 27m 30롤 2팩', '28900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('38', '12', '02_벚꽃 프리미엄 27m 30롤 2팩', '32900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('39', '13', '(증정) 초미세모 칫솔 12개 x 2개', '11900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('40', '13', '(증정) 잇몸케어 치약 100G 3개 x 2개', '16900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('41', '13', '(증정) 구취케어 치약 100G 3개 x 2개', '16900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('42', '13', '(증정)화이트케어 치약 100G 3개 x 2개', '19900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('43', '13', '(증정) 어린이 칫솔 12EA', '9900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('44', '14', '[가정용] 샤인머스켓 1kg 2수내외', '9900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('45', '14', '[특품] 샤인머스켓 1kg 1-2수', '12900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('46', '14', '[특품] 샤인머스켓 2kg 2-3수', '23900');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('47', '15', '화이트', '148000');
-INSERT INTO option_tb (`id`,`product_id`,`option_name`,`price`) VALUES ('48', '15', '블랙', '148000');
+현재와 미래를 더 가치 있게 바꾸고 싶다면,
+‘미래의 나’와 ');
+INSERT INTO book_tb (`id`,`pic_url`,`title`,`writer`, `content`) VALUES ('3', '/images/book.png', '시대예보:핵개인의 시대', '송길영','마인드 마이너 송길영이 예보하는 미래 시대,
+앞으로 세상은 어떻게 변화할 것인가?
 
-INSERT INTO cart_tb (`id`,`user_id`,`option_id`,`quantity`,`price`) VALUES ('1', '1', '1', '2', '20000');
-INSERT INTO cart_tb (`id`,`user_id`,`option_id`,`quantity`,`price`) VALUES ('2', '1', '2', '1', '10900');
-INSERT INTO cart_tb (`id`,`user_id`,`option_id`,`quantity`,`price`) VALUES ('3', '1', '6', '1', '9900');
-INSERT INTO cart_tb (`id`,`user_id`,`option_id`,`quantity`,`price`) VALUES ('4', '1', '7', '1', '14500');
-
-INSERT INTO order_tb (`id`,`user_id`) VALUES ('1', '1');
-
-INSERT INTO item_tb (`id`,`option_id`,`order_id`,`quantity`,`price`) VALUES ('1', '1', '1', '2', '20000');
-INSERT INTO item_tb (`id`,`option_id`,`order_id`,`quantity`,`price`) VALUES ('2', '2', '1', '1', '10900');
-INSERT INTO item_tb (`id`,`option_id`,`order_id`,`quantity`,`price`) VALUES ('3', '6', '1', '1', '9900');
-INSERT INTO item_tb (`id`,`option_id`,`order_id`,`quantity`,`price`) VALUES ('4', '7', '1', '1', '14500');
-
+한 철의 기상을 알려주는 일기예보가 아닌,
+삶을 대비하기 위한 더 큰 호흡의 ‘시');
+INSERT INTO book_tb (`id`,`pic_url`,`title`,`writer`, `content`) VALUES ('4', '/images/book.png', '설자은, 금성으로 돌아오다', '정세랑','정세랑이 선보이는 격 역사 미스터리 모험담!');
+INSERT INTO book_tb (`id`,`pic_url`,`title`,`writer`, `content`) VALUES ('5', '/images/book.png', '책으로 가는 문', '미야자키 하야오','이 안에 당신의 첫 책도 있나요?');
+INSERT INTO book_tb (`id`,`pic_url`,`title`,`writer`, `content`) VALUES ('6', '/images/book.png', '로마 이야기', '줌파 라히리','이름, 국적, 나이, 성별…… 주어진 정체성에서 벗어날 수 있을까?');
+INSERT INTO book_tb (`id`,`pic_url`,`title`,`writer`, `content`) VALUES ('7', '/images/book.png', '문과 남자의 과학 공부', '유시민','과학 공부로 길어 올린 생명과 우주에 관한 진실, 인간과 사회를 이해하는 방법
+”내 삶을 어떤 의미로 채울 것인가?”');
+INSERT INTO book_tb (`id`,`pic_url`,`title`,`writer`, `content`) VALUES ('8', '/images/book.png', '아주 희미한 빛으로도', '최은영','더 진실하기를, 더 치열하기를, 더 용기 있기를
+[내게 무해한 사람] 이후 5년, 고요하게 휘몰아치는 최은영의 세계');
+INSERT INTO book_tb (`id`,`pic_url`,`title`,`writer`, `content`) VALUES ('9', '/images/book.png', '역행자', '자청','한층 더 강력한 치트기, 독해진 팩트 폭격!
+50주 연속 베스트셀러·40만 독자의 삶을 바꾼 [역행자]가 확장판으로 돌아왔다.');

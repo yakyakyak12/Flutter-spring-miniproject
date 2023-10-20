@@ -21,7 +21,7 @@ public class BookResponse {
             this.picUrl = book.getPicUrl();
             this.title = book.getTitle();
             this.writer = book.getWriter();
-            this.writer = book.getContent();
+            this.content = book.getContent();
         }
     }
 
