@@ -11,6 +11,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import com.example.kakao._core.errors.exception.Exception404;
+import com.example.kakao.book.BookResponse.BookDetailDTO;
+
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
@@ -18,6 +21,12 @@ import lombok.RequiredArgsConstructor;
 public class BookService {
 
     private final BookJPARepository bookJPARepository;
+
+
+    public BookResponse.BookDetailDTO 상세보기(Integer id) {
+        Book bookPs = bookJPARepository.findById(id).orElseThrow(() -> new Exception404("존재하지 않는 도서입니다. : " + id));
+        return new BookDetailDTO(bookPs);
+    }
 
     // 책 리스트
     public List<BookResponse.FindAllDTO> findAll(int page){

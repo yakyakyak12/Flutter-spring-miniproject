@@ -1,12 +1,24 @@
 package com.example.kakao.book;
 
-import javax.persistence.Column;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 public class BookResponse {
+
+
+    @Getter
+    @Setter
+    @ToString
+    public static class BookDetailDTO {
+        private int id;
+        private String picUrl;
+        private String title;
+        private String writer;
+        private String content;
+
+        public BookDetailDTO(Book book) {
 
     // 책 리스트
     @ToString
@@ -23,6 +35,10 @@ public class BookResponse {
             this.picUrl = book.getPicUrl();
             this.title = book.getTitle();
             this.writer = book.getWriter();
+
+            this.content = book.getContent();
+        }
+    }
         }        
     }
 }
